@@ -2,7 +2,7 @@
 An extremely inefficient (brute-force) way to generate topo files of all n-node networks
 
 ## Running the code
-Change n to the desired number of nodes (tested upto n=4)
+Change n to the desired number of nodes. This has been tested upto n=4 and the output for n=4 given in the git branch n4.
 ```bash
 python topo_gen_all.py
 ```
