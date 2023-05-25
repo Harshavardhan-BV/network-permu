@@ -6,8 +6,10 @@ import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
+# Number of nodes in graph
+n=4 #(change here)
+
 # Initialize empty n node graph
-n=4
 G = nx.DiGraph()
 G.add_nodes_from(range(0,n))
 
@@ -65,7 +67,6 @@ for m in range(m_max+1):
     for g in g_u:
         # Plot the graph and save it (not a clear visualization)
         nx.draw(g)
-
         plt.savefig('./figures_'+str(n)+'/'+str(m)+'_'+str(g_n)+'.svg')
         plt.clf()
         # Convert the Graph to dataframe
