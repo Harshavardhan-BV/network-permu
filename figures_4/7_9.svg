@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="345.6pt" viewBox="0 0 460.8 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2023-04-25T12:20:17.519068</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.6 
+L 460.8 345.6 
+L 460.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 400.723852 175.041726 
+Q 325.406125 105.454077 250.909588 36.625142 
+" clip-path="url(#pdf66c9ea5d)" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 252.490336 40.80859 
+L 250.909588 36.625142 
+L 255.204795 37.870613 
+z
+" clip-path="url(#pdf66c9ea5d)" style="stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 398.559861 179.373037 
+Q 223.534164 147.674076 49.608605 116.17436 
+" clip-path="url(#pdf66c9ea5d)" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 53.188152 118.855189 
+L 49.608605 116.17436 
+L 53.900997 114.91922 
+z
+" clip-path="url(#pdf66c9ea5d)" style="stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 407.960313 189.528094 
+Q 413.947656 248.261492 419.821613 305.882621 
+" clip-path="url(#pdf66c9ea5d)" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 421.405639 301.700413 
+L 419.821613 305.882621 
+L 417.426262 302.106075 
+z
+" clip-path="url(#pdf66c9ea5d)" style="stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 250.08677 35.864922 
+Q 325.404496 105.452571 399.901033 174.281506 
+" clip-path="url(#pdf66c9ea5d)" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 398.320285 170.098058 
+L 399.901033 174.281506 
+L 395.605826 173.036035 
+z
+" clip-path="url(#pdf66c9ea5d)" style="stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 235.729113 33.305335 
+Q 141.858752 72.210387 49.02123 110.687372 
+" clip-path="url(#pdf66c9ea5d)" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 53.482181 111.003478 
+L 49.02123 110.687372 
+L 51.950685 107.308275 
+z
+" clip-path="url(#pdf66c9ea5d)" style="stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 47.98584 111.116495 
+Q 141.856202 72.211443 234.693723 33.734458 
+" clip-path="url(#pdf66c9ea5d)" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 230.232773 33.418352 
+L 234.693723 33.734458 
+L 231.764268 37.113555 
+z
+" clip-path="url(#pdf66c9ea5d)" style="stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 416.250722 308.251075 
+Q 332.270498 172.799674 248.879412 38.298491 
+" clip-path="url(#pdf66c9ea5d)" style="fill: none; stroke: #000000; stroke-linecap: round"/>
+    <path d="M 249.287373 42.75198 
+L 248.879412 38.298491 
+L 252.68698 40.644215 
+z
+" clip-path="url(#pdf66c9ea5d)" style="stroke: #000000; stroke-linecap: round"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m0629e38fbe" d="M 0 8.660254 
+C 2.296726 8.660254 4.499694 7.747755 6.123724 6.123724 
+C 7.747755 4.499694 8.660254 2.296726 8.660254 0 
+C 8.660254 -2.296726 7.747755 -4.499694 6.123724 -6.123724 
+C 4.499694 -7.747755 2.296726 -8.660254 0 -8.660254 
+C -2.296726 -8.660254 -4.499694 -7.747755 -6.123724 -6.123724 
+C -7.747755 -4.499694 -8.660254 -2.296726 -8.660254 0 
+C -8.660254 2.296726 -7.747755 4.499694 -6.123724 6.123724 
+C -4.499694 7.747755 -2.296726 8.660254 0 8.660254 
+z
+" style="stroke: #1f78b4"/>
+    </defs>
+    <g clip-path="url(#pdf66c9ea5d)">
+     <use xlink:href="#m0629e38fbe" x="407.082444" y="180.916565" style="fill: #1f78b4; stroke: #1f78b4"/>
+     <use xlink:href="#m0629e38fbe" x="243.728177" y="29.990083" style="fill: #1f78b4; stroke: #1f78b4"/>
+     <use xlink:href="#m0629e38fbe" x="39.986777" y="114.431747" style="fill: #1f78b4; stroke: #1f78b4"/>
+     <use xlink:href="#m0629e38fbe" x="420.813223" y="315.609917" style="fill: #1f78b4; stroke: #1f78b4"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdf66c9ea5d">
+   <rect x="0" y="0" width="460.8" height="345.6"/>
+  </clipPath>
+ </defs>
+</svg>
