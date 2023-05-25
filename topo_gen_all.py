@@ -48,13 +48,13 @@ m_max = n*(n-1)
 # Rename nodes from 0-3 to A-D for topofiles
 repl_d = {0:'A',1:'B',2:'C',3:'D'}
 # Get a complete digraph
-g_c = nx.complete_graph(m,nx.DiGraph())
+g_c = nx.complete_graph(n,nx.DiGraph())
 # Convert it to topo file format with all inhibition
 df_c = nx.to_pandas_edgelist(g_c)
 df_c['type']=2
 # Make directories
-os.makedir('./figures_'+str(n)+'/')
-os.makedir('./topfiles_'+str(n)+'/')
+os.makedirs('./figures_'+str(n)+'/')
+os.makedirs('./topofiles_'+str(n)+'/')
 # Iterate over no. of permutations
 for m in range(m_max+1):
     print(n)
@@ -80,5 +80,5 @@ for m in range(m_max+1):
         # Rename nodes
         df[keys] = df[keys].replace(repl_d)
         # Save the topofile
-        df.to_csv('./topfiles_'+str(n)+'/'+str(m)+'_'+str(g_n)+'.topo',sep='\t',index=False)
+        df.to_csv('./topofiles_'+str(n)+'/'+str(m)+'_'+str(g_n)+'.topo',sep='\t',index=False)
         g_n+=1
