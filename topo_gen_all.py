@@ -59,7 +59,7 @@ os.makedirs('./figures_'+str(n)+'/')
 os.makedirs('./topofiles_'+str(n)+'/')
 # Iterate over no. of permutations
 for m in range(m_max+1):
-    print(n)
+    print(m)
     g_u = unique_graphs(m)
     # Number of unique networks
     print('nos',len(g_u))
