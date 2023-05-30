@@ -7,7 +7,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 # Number of nodes in graph
-n=4 #(change here)
+n=2 #(change here)
 
 # Initialize empty n node graph
 G = nx.DiGraph()
@@ -17,8 +17,6 @@ G.add_nodes_from(range(0,n))
 def get_possible_edges(m):
     # generate all possible pairs of nodes
     node_pairs = itertools.product(range(0, n), repeat=2)
-    # filter out self-loops
-    node_pairs = filter(lambda x: x[0] != x[1], node_pairs)
     # create all possible permutations of n edges
     edge_permutations = itertools.combinations(node_pairs, m)
     # create a list of graphs with each permutation of edges
@@ -46,7 +44,7 @@ def unique_graphs(m):
     return g_uniq
 
 # Maximum number of edges (to permute)
-m_max = n*(n-1)
+m_max = n**2
 # Rename nodes from 0-3 to A-D for topofiles
 repl_d = {0:'A',1:'B',2:'C',3:'D'}
 # Get a complete digraph
