@@ -13,28 +13,19 @@ n=4 #(change here)
 G = nx.DiGraph()
 G.add_nodes_from(range(0,n))
 
-# Get all possible graphs with m edges network
-def get_possible_edges(m):
+# Select the unique graphs with m edges network (ie do not repeat isomorphic ones) 
+def unique_graphs(m):
     # generate all possible pairs of nodes
     node_pairs = itertools.product(range(0, n), repeat=2)
     # filter out self-loops
     node_pairs = filter(lambda x: x[0] != x[1], node_pairs)
-    # create all possible permutations of n edges
+    # create all possible permutations of m edges
     edge_permutations = itertools.combinations(node_pairs, m)
     # create a list of graphs with each permutation of edges
-    graphs = []
+    g_uniq = []
     for edges in edge_permutations:
         G1 = G.copy()
         G1.add_edges_from(edges)
-        graphs.append(G1)
-    return graphs
-
-# Select the unique graphs (ie do not repeat isomorphic ones)
-def unique_graphs(m):
-    # get all combinations with m edges
-    gs = get_possible_edges(m)
-    g_uniq=[]
-    for G1 in gs:
         for G2 in g_uniq:
             # if the graph is isomorphic to existing do nothing
             if nx.algorithms.is_isomorphic(G1, G2):
@@ -42,7 +33,6 @@ def unique_graphs(m):
         else:
             # or add it to unique list
             g_uniq.append(G1)
-    # return list 
     return g_uniq
 
 # Maximum number of edges (to permute)
