@@ -1,5 +1,6 @@
 # Import packages
 import os
+import argparse
 import itertools
 import numpy as np
 import pandas as pd
@@ -7,8 +8,11 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import multiprocessing as mp
 
-# Number of nodes in graph
-n=5 #(change here)
+# Number of nodes in graph from command line
+parser = argparse.ArgumentParser()
+parser.add_argument("n", help="Number of nodes in the graph", type=int)
+args = parser.parse_args()
+n = args.n
 
 # Initialize empty n node graph
 G = nx.DiGraph()
@@ -46,17 +50,19 @@ def unique_graphs(m, save_topo=True):
             # or add it to unique list
             g_uniq.append(G1)
             if save_topo:
-                # Convert the Graph to dataframe
-                df_g = nx.to_pandas_edgelist(G)
-                df = df_c.copy()
-                # ????
-                keys = list(df_g.columns.values)
+                # Convert the "unique" Graph to dataframe
+                df_g = nx.to_pandas_edgelist(G1)
+                # Start with the complete graph
+                df = df_c.copy()            
+                keys = ['source','target']
+                # Convert source, target to keys for complete graph
                 i1 = df[keys].set_index(keys).index
+                # Do the same for the unique graph
                 i2 = df_g.set_index(keys).index
                 # Set the edge as activation if edge exists in df_g
                 df.loc[i1.isin(i2),'type']=1
                 # Rename nodes
-                df[keys] = df[keys].applymap(lambda x: chr(ord('A') + x))
+                df[keys] = df[keys].map(lambda x: chr(ord('A') + x))
                 # Save the topofile
                 df.to_csv('./topofiles_'+str(n)+'/'+str(m)+'_'+str(g_n)+'.topo',sep='\t',index=False)
             g_n+=1
@@ -69,5 +75,5 @@ with mp.Pool(ncores) as pool:
     bigg = pool.map(unique_graphs, range(m_max+1))
 # Get the length of elements in bigg
 bigg_len = [len(i) for i in bigg]
-print(bigg_len)
+print(bigg_len, sum(bigg_len))
 
