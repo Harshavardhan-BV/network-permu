@@ -162,3 +162,4 @@ cython_debug/
 # Ignore the output topofiles
 topofiles_*/
 topofiles_*.tar.xz
+Isographs_*.csv
